@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main Currency View Controller-->
+        <scene sceneID="wQ6-Vw-CPp">
+            <objects>
+                <viewController storyboardIdentifier="MainCurrencyViewController" id="kWm-F1-uXI" customClass="MainCurrencyViewController" customModule="SalesBook_Exchange" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vN5-5f-ik9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yoo-bu-bJ8">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eQo-GI-3Qu"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yoo-bu-bJ8" firstAttribute="leading" secondItem="eQo-GI-3Qu" secondAttribute="leading" id="BL4-hT-pLg"/>
+                            <constraint firstItem="eQo-GI-3Qu" firstAttribute="bottom" secondItem="yoo-bu-bJ8" secondAttribute="bottom" id="IMB-MP-RCF"/>
+                            <constraint firstItem="eQo-GI-3Qu" firstAttribute="trailing" secondItem="yoo-bu-bJ8" secondAttribute="trailing" id="OOr-Xl-2Yu"/>
+                            <constraint firstItem="yoo-bu-bJ8" firstAttribute="top" secondItem="eQo-GI-3Qu" secondAttribute="top" id="rKH-Z6-rOg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="yoo-bu-bJ8" id="DeN-Ha-E3g"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UxR-ia-eIb" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-381" y="155"/>
+        </scene>
+        <!--Detail Currency View Controller-->
+        <scene sceneID="Evz-Tc-Nlg">
+            <objects>
+                <viewController storyboardIdentifier="DetailCurrencyViewController" id="jL1-n4-ANr" customClass="DetailCurrencyViewController" customModule="SalesBook_Exchange" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0Pl-Kd-ugc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="j0Y-uS-Elq">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1VU-FO-znI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="j0Y-uS-Elq" firstAttribute="top" secondItem="1VU-FO-znI" secondAttribute="top" id="Thp-57-Sqt"/>
+                            <constraint firstItem="j0Y-uS-Elq" firstAttribute="leading" secondItem="1VU-FO-znI" secondAttribute="leading" id="aBO-PF-y1P"/>
+                            <constraint firstItem="1VU-FO-znI" firstAttribute="trailing" secondItem="j0Y-uS-Elq" secondAttribute="trailing" id="fnr-vh-Ley"/>
+                            <constraint firstItem="1VU-FO-znI" firstAttribute="bottom" secondItem="j0Y-uS-Elq" secondAttribute="bottom" id="sBX-Bp-77r"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="j0Y-uS-Elq" id="fZL-tX-fLZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U4S-uV-b8G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="433" y="155"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
